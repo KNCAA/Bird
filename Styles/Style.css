@@ -1,0 +1,748 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #E1EDE6;
+}
+
+.header-container {
+    justify-content: center;
+    align-items: center;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 33px 0px 32px 0px;
+    gap: 497px;
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+.left-panel {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-text {
+    color: #598D66;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    align-items: center;
+}
+
+.logo {
+    width: 35px;
+    height: 35px;
+}
+
+.logo-sttings {
+    display: flex;
+    height: 35px;
+    align-items: center;
+    gap: 8px;
+}
+
+.right-panel-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+
+
+/* Animation settings */
+
+#block-menu {
+    position: relative;
+    z-index: 1;
+    transition: 0.2s;
+}
+
+
+#block-menu:hover {
+    color: #598D66;
+}
+
+#block-menu:active {
+    color: #376B44;
+}
+
+#block-menu:focus {
+    color: #2C2D35;
+
+    padding: 0px 5px;
+    align-items: flex-start;
+    background: #D4E8D9;
+}
+
+#shoppcart-menu path {
+    position: relative;
+    z-index: 1;
+    transition: 0.2s;
+}
+
+#shoppcart-menu:hover path {
+    stroke: #598D66;
+}
+
+#shoppcart-menu:active path {
+    stroke: #376B44;
+}
+
+
+
+/* Main settings */
+
+main {
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    width: 1440px;
+    height: 620px;
+    padding: 0px 165px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-shrink: 0;
+}
+
+.main-container {
+    display: flex;
+    width: 1440px;
+    height: 620px;
+    padding: 0px 165px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-shrink: 0;
+}
+
+.right-main-text {
+    width: 540px;
+    height: 331px;
+    flex-shrink: 0;
+}
+
+.top-text {
+    width: 540px;
+
+    color: #2C2D35;
+    font-family: Raleway;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+
+    padding-bottom: 20px;
+}
+
+.under-top-text {
+    width: 540px;
+
+    color: #86928B;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+
+    padding-bottom: 60px;
+}
+
+#btn-setting {
+    width: 225px;
+}
+
+#btn-setting button {
+    display: inline-flex;
+    height: 65px;
+    padding: 20px 60px;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+    background-color: white;
+
+    border: 1px solid #598D66;
+
+
+    color: #598D66;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    position: relative;
+    z-index: 1;
+    transition: 0.4s;
+}
+
+
+#btn-setting:hover button {
+    background: #598D66;
+    color: #F4F6F5;
+}
+
+#btn-setting:active button {
+    background: #376B44;
+    color: #FFF;
+}
+
+.catalog {
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    width: 1090px;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding-top: 69px;
+}
+
+.catalog-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 427px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.raight-menu {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.left-name {
+    color: #2C2D35;
+    font-family: Raleway;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+}
+
+#btn-catalog button {
+    display: flex;
+    padding: 10px 20px;
+    align-items: flex-start;
+    border-radius: 20px;
+    background: #D4E8D9;
+    border: 0;
+
+    position: relative;
+    z-index: 1;
+    transition: 0.3s;
+
+    color: #2C2D35;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.france-catalog {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+
+    margin-top: 30px;
+}
+
+.top-catalog {
+    margin-left: auto;
+    margin-right: auto;
+
+    flex-direction: row;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.buttom-catalog {
+    margin-left: auto;
+    margin-right: auto;
+
+    flex-direction: row;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+/* Card Settings Catalog */
+
+.card {
+    height: 730px;
+    width: 350px;
+    background: #E1EDE6;
+
+    padding: 20px 20px 30px 20px;
+}
+
+.card-top-mini-name {
+    color: #86928B;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.card-name {
+    color: #2C2D35;
+    font-family: Raleway;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    padding-bottom: 8px;
+}
+
+.under-top-name {
+    color: #2C2D35;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    padding-bottom: 30px;
+}
+
+.card-price {
+    color: #598D66;
+    font-family: Raleway;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    padding-bottom: 20px;
+}
+
+#card-btn {
+    width: 310px;
+    display: flex;
+}
+
+#card-btn button {
+    display: inline-flex;
+    height: 65px;
+    padding: 20px 60px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: #E1EDE6;
+    width: 310px;
+
+    border: 1px solid #598D66;
+
+
+    color: #598D66;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    position: relative;
+    z-index: 1;
+    transition: 0.4s;
+}
+
+#card-btn:hover button {
+    background: #598D66;
+    color: #F4F6F5;
+}
+
+#card-btn:active button {
+    background: #376B44;
+    color: #FFF;
+}
+
+
+.info-block {
+    width: 1440px;
+    height: 574px;
+    flex-shrink: 0;
+
+    margin-left: auto;
+    margin-right: auto;
+
+
+    background-image: url(../Imges/pic_background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    margin-top: 70px;
+}
+
+.info-logo {
+    width: 80px;
+    height: 80px;
+}
+
+.info-name {
+    width: 540px;
+    color: #F4F6F5;
+    font-family: Raleway;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+.top-name-info {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+
+.main-text {
+    width: 540px;
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+
+    padding-bottom: 60px;
+}
+
+#info-btn button {
+    display: inline-flex;
+    height: 65px;
+    padding: 20px 60px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background-color: #EEDB6D;
+    width: 310px;
+
+    border: 1px solid #EEDB6D;
+
+
+    color: #2C2D35;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    position: relative;
+    z-index: 1;
+    transition: 0.4s;
+}
+
+#info-btn:hover button {
+    background: #FAEB97;
+    color: #2C2D35;
+}
+
+#info-btn:active button {
+    background: #D9B949;
+    color: #2C2D35;
+}
+
+.info-block-container {
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 1090px;
+}
+
+
+
+
+
+/* Our command block */
+
+.command-container {
+    width: 1090px;
+    height: 440px;
+    flex-shrink: 0;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+}
+
+.our-command-block {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.right-command-text {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+
+    padding-top: 124px;
+    padding-left: 30px;
+}
+
+.avatars-block {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.out-command {
+    color: #2C2D35;
+    font-family: Raleway;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+}
+
+.under-out-command {
+    color: #2C2D35;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+
+    width: 635px;
+}
+
+
+
+/* Footer settings */
+
+footer {
+    width: 100%;
+    height: 168px;
+    flex-shrink: 0;
+    background: #E1EDE6;
+}
+
+
+.footer-container {
+    width: 1090px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 23px;
+}
+
+
+.logo-icon {
+    width: 35px;
+    height: 35px;
+}
+
+.logo-text {
+    color: #598D66;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.phone-numb {
+    color: #2C2D35;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.under-phone-numb {
+    color: #86928B;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.logo-container {
+    display: inline-flex;
+    height: 35px;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+
+    margin-bottom: 25px;
+}
+
+.phone-container {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.left-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.middle-container {
+    display: flex;
+    width: 445px;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.first-col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+.top-section {
+    color: #2C2D35;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.second-section {
+    color: #86928B;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.four-section {
+    color: #86928B;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.five-section {
+    color: #86928B;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-container {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.soc-media {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+.inc {
+    color: #86928B;
+    font-family: Raleway;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.all-rights {
+    color: #86928B;
+    font-family: Raleway;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+#media-btns path {
+    position: relative;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+#media-btns:hover path {
+    fill: #598D66;
+}
+
+#media-btns:active path {
+    fill: #376B44;
+}
+
+#footer-sections {
+    position: relative;
+    z-index: 1;
+    transition: 0.2s;
+}
+
+#footer-sections:hover {
+    color: #598D66;
+}
+
+#footer-sections:active {
+    color: #376B44;
+}
